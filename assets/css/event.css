@@ -1,0 +1,285 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0f1626;
+    --text-color: rgb(255, 255, 255);
+}
+
+html{
+    font-size: 10px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.landing-event {
+    width: 100%;
+    height: 100vh;
+    padding: 0 5%;
+    background: url("../img/event-landing.png") right no-repeat;
+    background-size: 55%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+.landing-event::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intro {
+    width: 50%;
+    height: 90%;
+    z-index: 1;
+    position: absolute;
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.intro h1 {
+    font-weight: 900;
+    font-size: 6.3rem;
+    /* color: #000; */
+    color: var(--text-color);
+    margin-bottom: 3rem;
+    line-height: 1;
+}
+.intro p {
+    /* color: #000; */
+    color: var(--text-color);
+    line-height: 2;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+} 
+.intro .landing-btn {
+    display: block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #333;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 175px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    margin-top: 30px;
+    transition: all 0.1s ease;
+}
+.intro .landing-btn:hover {
+    color: #F6F7FA;
+    background-color: #333;
+}
+
+
+@media screen and (max-width: 1140px) {
+    .nav a {
+        color: #F6F7FA;
+    }
+    .burger .burger-ele1, .burger-ele3 {
+        background-color: #F6F7FA;
+    }
+    .burger .burger-ele2 {
+        background-color: #F6F7FA;
+    }
+    .landing-event {
+        background: none;
+        background-color: #000;
+    }
+    .intro {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .intro h1 {
+        color: #F6F7FA;
+        padding-bottom: 3rem;
+        border-bottom: 2px solid #F6F7FA;
+    }
+    .intro p {
+        color: #F6F7FA;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 745px) {
+    body {
+        background-color: #F6F7FA;
+    }
+    .landing-event .intro h1 {
+        font-size: 4.5rem;
+    }
+    .landing-event .intro p {
+        text-align: left;
+        line-height: normal;
+        font-size: 1.8rem;
+    }
+    .intro .landing-btn {
+        width: 140px;
+        height: 43px;
+        line-height: 40px;
+        font-size: 1.6rem;
+    }
+}
+
+
+
+/*What we Do */
+.up-event, .past-web, .past-contest, .past-tech {
+    width: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F6F7FA;
+}
+.do-heading {
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #F6F7FA;
+    font-size: 4em;
+}
+.do-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.do-card {
+    display: flex;
+    width: 450px;
+    height: max-content;
+    flex-direction: column;
+    margin: 3rem 3rem;
+    padding: 3rem 2rem;
+    border: 3px solid #f6f7fa;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: all 200ms ease;
+    color: #333;
+    text-decoration: none;
+}
+.do-card:hover {
+    box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+    transform: translate(0px, -10px);
+}
+.do-card .do-img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+.do-card .do-name {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+    text-decoration: none;
+}
+.do-card .do-detail {
+    color: #666;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+.do-info .date {
+    color: #000;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-top: 2rem;
+    font-weight: 400;
+    text-align: left;
+    transition: all 0.1s ease;
+}
+.do-info .date:hover {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.do-info .time {
+    color: #000;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    transition: all 0.1s ease;
+}
+.do-info .time:hover {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+.do-info .details {
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #333;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 30px;
+    transition: all 0.1s ease;
+}
+.do-info .details:hover {
+    color: #F6F7FA;
+    background-color: #333;
+}
+
+
+
+.event-border {
+    width: 100%;
+    background-color: #F6F7FA;
+    padding: 1rem 0;
+}
+@media screen and (max-width: 1140px) {
+    .do-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .do-card {
+        width: 40%;
+        margin: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .do-card {
+        width: auto;
+    }
+    .do-heading {
+        font-size: 3em;
+    }   
+    .do-card .do-name {
+        font-size: 2.5rem;
+    }
+    .do-card .do-detail {
+        font-size: 1.5rem;
+    }
+}
+

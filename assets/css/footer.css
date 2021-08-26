@@ -1,0 +1,255 @@
+/* footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F7FA;
+    padding: 5rem 3rem;
+}
+.club-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.club-name .club-desc {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+.footer-logo img {
+    border-radius: 50%;
+    display: flex;
+    width: 6rem;
+    margin-right: 2rem;
+}
+.footer-logo h1 {
+    font-size: 3.2rem;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-links .link-name {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.footer-links .link-list {
+    list-style: none;
+    text-align: center;
+}
+.link-list a {
+    text-decoration: none;
+}
+.link-list li {
+    margin-top: 1rem;
+}
+
+.clg-desc {
+    text-align: center;
+    width: 50%;
+}
+.clg-desc .clg-info {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.footer-follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social img {
+    width: 5rem;
+    margin: 1rem;
+} */
+
+:root {
+  --primary-color: #0f1626;
+  --text-color: rgb(255, 255, 255);
+}
+
+#footer {
+  background-color: var(--primary-color);
+  display: block;
+  /* color: #fff; */
+  font-size: 14px;
+  position: relative;
+  color: var(--text-color);
+}
+
+/* #footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+  } */
+
+#footer .footer-top {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 40px 0 0 0;
+  color: var(--text-color);
+}
+
+#footer .footer-top .footer-newsletter {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-newsletter {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+#footer .footer-bottom {
+  /* border-top: 1px solid #222222; */
+  z-index: 2;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 0 0 15px 0;
+  font-style: normal;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  background-color: transparent;
+  transition: color 200ms ease;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #475d75;
+}
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+  font-style: normal;
+}
+
+#footer .footer-top .footer-contact p {
+  line-height: 26px;
+}
+#footer .copyright {
+  text-align: center;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+.social-links img {
+  margin-right: 15px;
+  margin-bottom: 1rem;
+}
+.footer-links h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: #333;
+}
+.footer-newsletter h4 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: var(--text-color);
+}
+.footer-newsletter p {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  background-color: transparent;
+}
+
+/* #new-property{ */
+/*  */
+/* } */
+
+.CollegeCustom {
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 0.008em;
+  font-style: italic;
+}
+
+/* icons */
+/* .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+*/
+.Rounded {
+  border-radius: 50%;
+}
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .row1 {
+    flex-direction: column;
+  }
+}

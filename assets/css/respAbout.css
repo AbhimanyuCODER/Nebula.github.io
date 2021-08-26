@@ -1,0 +1,27 @@
+@media screen and (max-width: 990px) {
+  .about-Container {
+    width: 70%;
+    height: 350px;
+  }
+
+  .para {
+    font-size: 14px;
+  }
+  .textAboutUs {
+    font-size: 40px;
+  }
+  .about-Container:hover .textAboutUs {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .about-Container {
+    width: 95%;
+  }
+  .textAboutUs {
+    font-size: 30px;
+  }
+  .about-Container:hover .textAboutUs {
+    font-size: 20px;
+  }
+}
